@@ -1,6 +1,10 @@
+/* header */
 #header{
     width: 100vw;
     padding: 31px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 .header-container{
     width: 100%;
@@ -34,9 +38,52 @@
     display: flex;
 }
 .gnb ul li{
-    margin: 0 28px;
+    margin: 0 25px;
 }
 .gnb ul li a{
     font-weight: 400;
     color: #fff;
+    font-size: 16.8px;
+    letter-spacing: 0.5px;
+}
+
+/* banner */
+#banner{
+    width: 100vw;
+    height: 100%;
+    background-image: url("../images/main/wzd-main-bg.png");
+    background-size: 137%;
+    background-repeat: no-repeat;
+    background-position: 50% top;
+}
+.banner-container{
+    width: 100%;
+    max-width: 1170px;
+    height: 100%;
+    padding: 7% 0 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-content{
+    display: block;
+    width: 35.5%;
+}
+.banner-content img{
+    padding-left: 15px;
+    max-width: 95%;
+}
+.banner-content p{
+    line-height: 30px;
+    font-size: 20px;
+    margin-top: 20px;
+    padding-left: 15px;
+}
+.banner-img{
+    padding: 15px 0px;
+    width: 56%;
+}
+.banner-img img{
+    max-width: 100%;
 }
