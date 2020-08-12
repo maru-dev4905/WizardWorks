@@ -50,3 +50,7 @@ a{
     text-decoration: none;
     color: #000;
 }
+.content{
+    position: relative;
+    padding: 100px 0;
+}

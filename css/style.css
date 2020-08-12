@@ -5,6 +5,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 99999;
 }
 .header-container{
     width: 100%;
@@ -86,4 +87,83 @@
 }
 .banner-img img{
     max-width: 100%;
+}
+
+/* philosophy */
+#philosophy{
+    width: 100vw;
+    height: auto;
+    background-color: #f6f6f6;
+}
+.philosophy-container{
+    width: 100%;
+    height: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+    color: #333;
+}
+.philosophy-container h3{
+    font-size: 46px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom:25px;
+    padding-bottom: 25px;
+}
+.philosophy-container h3::after{
+    content: "";
+    width: 25px;
+    height: 1px;
+    background-color: #333;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+.philosophy-container > p{
+    line-height: 30px;
+    font-size: 20px;
+}
+.philosophy-content{
+    display: flex;
+    margin-top: 75px;
+}
+.philosophy-content .philosophy-card{
+    width: 33.3%;
+    padding: 0 4%;
+}
+.philosophy-content .philosophy-card:nth-child(2){
+    position: relative;
+}
+.philosophy-content .philosophy-card:nth-child(2)::before{
+    content: "";
+    width: 200px;
+    border-top: 4px dashed rgba(3, 3, 3, 0.1);
+    position: absolute;
+    left: -50%;
+    top: 25%;
+    transform: translateX(50%);
+}
+.philosophy-content .philosophy-card:nth-child(2)::after{
+    content: "";
+    width: 200px;
+    border-top: 4px dashed rgba(3, 3, 3, 0.1);
+    position: absolute;
+    right: -25%;
+    top: 25%;
+}
+.philosophy-content img{
+    width: 95px;
+}
+.philosophy-card h4{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.philosophy-card p{
+    font-size: 14px;
+    line-height: 25px;
+    color: #666;
+    word-break: keep-all;
 }
