@@ -54,6 +54,9 @@ a{
     position: relative;
     padding: 100px 0;
 }
+.content#service{
+	padding-bottom: 0;
+}
 button{
 	background: none;
 	border: none;
