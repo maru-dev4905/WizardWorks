@@ -1,4 +1,11 @@
 /* header */
+#header.hide{
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+#header.hide .gnb li a{
+    color: #000;
+}
 #header{
     width: 100vw;
     padding: 31px 0;
@@ -6,11 +13,12 @@
     top: 0;
     left: 0;
     z-index: 99999;
+    transition: 0.2s;
 }
 .header-container{
     width: 100%;
     max-width: 1170px;
-    padding: 15px 0;
+    padding: 13.5px 0;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
