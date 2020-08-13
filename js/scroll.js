@@ -27,12 +27,10 @@ const scroll = function(){
         if(nowScroll == 0){
             if(delta){
                 header.classList.remove("hide");
-                header.classList.add("show");
                 delta = false;
             }
         }else if(nowScroll > 0){
             if(delta == false){
-                header.classList.remove("show");
                 header.classList.add("hide");
                 delta = true;
             }
