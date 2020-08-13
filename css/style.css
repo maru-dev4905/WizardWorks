@@ -244,6 +244,9 @@
 .service-group .service-card{
     display: flex;
     color: #333;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 .service-card .service-card-content{
     width: 50%;
