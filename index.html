@@ -97,18 +97,18 @@
             <div class="service-container">
                 <h3>Our Services</h3>
                 <ul class="arcodion">
-                    <li class="on">
-                        <button type="button" class="service-btn">NOVA Wallet</button>
+                    <li> 
+                        <button type="button" class="tabLinks active">NOVA Wallet</button>
                     </li>
                     <li>
-                        <button type="button" class="service-btn">ThemeKeyboard</button>
+                        <button type="button" class="tabLinks">ThemeKeyboard</button>
                     </li>
                     <li>
-                        <button type="button" class="service-btn">Somcloud</button>
+                        <button type="button" class="tabLinks">Somcloud</button>
                     </li>
                 </ul>
                 <div class="service-group">
-                    <div class="service-card">
+                    <div id="novawallet" class="service-card active">
                         <div class="service-card-content">
                             <h4>
                                 NOVA
@@ -149,7 +149,7 @@
                             <img src="./images/common/wzd-nova-wallet.png" alt="service-nova-wallet-img">
                         </div>
                     </div>
-                    <div class="service-card">
+                    <div id="themekeyboard" class="service-card">
                         <div class="service-card-content">
                             <h4>
                                 ThemeKeyboard
@@ -175,7 +175,7 @@
                             <img src="./images/common/wzd-theme-keyboard.png" alt="service-theme-keyboard-img">
                         </div>
                     </div>
-                    <div class="service-card">
+                    <div id="somcloud" class="service-card">
                         <div class="service-card-content">
                             <h4>
                                 Somcloud
@@ -218,5 +218,6 @@
         </section>
     </main>
     <script src="js/scroll.js"></script>
+    <script src="js/service.js"></script>
 </body>
 </html>

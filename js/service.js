@@ -1,26 +1,25 @@
-const service = function(){
-    const btn = document.querySelector(".service-btn");
-    const serviceCard = document.querySelector(".service-card");
+window.addEventListener("load",()=>{
+    const tabLinks = document.getElementsByClassName("tabLinks");
 
-    const initModule = function(){
-
-        _addEventHandlers();
-    }
-    const _addEventHandlers = function(){
-        window.addEventListener("load", _checkPosition);
-        for(let i = 0; i < btn.length; i++){
-            btn.addEventListener("click", show_content);
+    tabLinks[0].addEventListener("click",()=>{
+        openService(event, 'novawallet');
+    })
+    tabLinks[1].addEventListener("click",()=>{
+        openService(event, 'themekeyboard');
+    })
+    tabLinks[2].addEventListener("click",()=>{
+        openService(event, 'somcloud');
+    })
+    
+    function openService(evt , cardName){
+        const serviceCard = document.querySelectorAll(".service-card");
+        for(let i = 0; i < serviceCard.length; i++){
+            serviceCard[i].style.display="none";
         }
+        for(let i = 0; i < tabLinks.length; i++){
+            tabLinks[i].className = tabLinks[i].className.replace("active","");
+        }
+        document.getElementById(cardName).style.display="flex";
+        evt.currentTarget.classList.add('active');
     }
-    const _checkPosition = function(){
-
-    }
-    const show_content = function(){
-        
-    }
-
-    return {
-        init : initModule
-    }
-}
-service().init();
+});
