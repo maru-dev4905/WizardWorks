@@ -334,7 +334,7 @@
     text-align: center;
 }
 .about-container .about__peopleBox{
-    padding: 50px 0;
+    padding: 50px 0 0;
 }
 .about__peopleBox .about__card{
     width: 155px;
@@ -355,4 +355,43 @@
     font-weight: 300;
     margin-top: 10px;
     text-align: center;
+}
+
+.about__historyBox{
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 60px;
+    padding: 70px 60px 20px 90px;
+    text-align: left;
+    overflow: hidden;
+}
+.about__historyBox li{
+    float: left;
+    margin-bottom: 50px;
+    width: 25%;
+    position: relative;
+    padding-left: 20px;
+}
+.about__historyBox li::before{
+    content: "";
+    width: 6px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    background-color: #f5732e;
+
+}
+.about__historyBox h4{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+.about__historyBox strong{
+    font-weight: 600;
+}
+.about__historyBox p{
+    line-height: 23px;
 }
