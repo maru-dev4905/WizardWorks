@@ -245,6 +245,12 @@
     display: none;
     color: #333;
 }
+.service-group #somcloud{
+    padding-bottom: 80px;
+}
+.service-group #themekeyboard{
+    padding-bottom: 11px;
+}
 .service-card .service-card-content{
     width: 50%;
     padding-right: 20px;
@@ -266,7 +272,7 @@
     word-break: keep-all;
 }
 .service-card .service-card-img{
-    width: 50%;
+    width: 45%;
     padding-left: 20px;
     text-align: center;
 }
@@ -301,6 +307,7 @@
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
+    text-align: center;
 }
 .about-container h3{
     font-size: 47px;
@@ -328,17 +335,16 @@
 }
 .about-container .about__peopleBox{
     padding: 50px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 .about__peopleBox .about__card{
     width: 155px;
-    margin: 0 10px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 0 5px 70px;
+    display: inline-block;
+}
+.about__peopleBox .about__card strong{
+    display: block;
+    text-align: center;
+    font-weight: bold;
 }
 .about__peopleBox .about__card img{
     max-width: 130px;
@@ -346,6 +352,7 @@
 }
 .about__peopleBox .about__card p{
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 300;
     margin-top: 10px;
+    text-align: center;
 }
