@@ -111,28 +111,6 @@
     text-align: center;
     color: #333;
 }
-.philosophy-container h3{
-    font-size: 46px;
-    font-weight: 700;
-    position: relative;
-    margin-bottom:25px;
-    padding-bottom: 25px;
-}
-.philosophy-container h3::after{
-    content: "";
-    width: 25px;
-    height: 1px;
-    background-color: #333;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
-}
-.philosophy-container > p{
-    line-height: 30px;
-    font-size: 20px;
-}
 .philosophy-content{
     display: flex;
     margin-top: 75px;
@@ -191,25 +169,6 @@
     justify-content: center;
     align-items: center;
 }
-.service-container h3{
-    font-size: 47px;
-    text-align: center;
-    color: #333;
-    font-weight: bold;
-    position: relative;
-    padding-bottom: 25px;
-}
-.service-container h3:after{
-    content: "";
-    width: 25px;
-    height: 1px;
-    background-color: #333;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
-}
 .arcodion{
     background-color: #f6f6f6;
     border-radius: 20px;
@@ -245,6 +204,12 @@
     display: none;
     color: #333;
 }
+.service-group #somcloud{
+    padding-bottom: 80px;
+}
+.service-group #themekeyboard{
+    padding-bottom: 11px;
+}
 .service-card .service-card-content{
     width: 50%;
     padding-right: 20px;
@@ -266,7 +231,7 @@
     word-break: keep-all;
 }
 .service-card .service-card-img{
-    width: 50%;
+    width: 45%;
     padding-left: 20px;
     text-align: center;
 }
@@ -301,44 +266,20 @@
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
-}
-.about-container h3{
-    font-size: 47px;
-    text-align: center;
-    color: #333;
-    font-weight: bold;
-    position: relative;
-    padding-bottom: 25px;
-}
-.about-container h3:after{
-    content: "";
-    width: 25px;
-    height: 1px;
-    background-color: #333;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
-}
-.about-container > p{
-    padding-top: 25px;
-    font-size: 20px;
     text-align: center;
 }
 .about-container .about__peopleBox{
-    padding: 50px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    padding: 50px 0 0;
 }
 .about__peopleBox .about__card{
     width: 155px;
-    margin: 0 10px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 0 5px 70px;
+    display: inline-block;
+}
+.about__peopleBox .about__card strong{
+    display: block;
+    text-align: center;
+    font-weight: bold;
 }
 .about__peopleBox .about__card img{
     max-width: 130px;
@@ -346,6 +287,128 @@
 }
 .about__peopleBox .about__card p{
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 300;
     margin-top: 10px;
+    text-align: center;
+}
+
+.about__historyBox{
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 60px;
+    padding: 70px 60px 20px 90px;
+    text-align: left;
+    overflow: hidden;
+}
+.about__historyBox li{
+    float: left;
+    margin-bottom: 50px;
+    width: 25%;
+    position: relative;
+    padding-left: 20px;
+}
+.about__historyBox li::before{
+    content: "";
+    width: 6px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    background-color: #f5732e;
+
+}
+.about__historyBox h4{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+.about__historyBox strong{
+    font-weight: 600;
+}
+.about__historyBox p{
+    line-height: 23px;
+}
+
+.careerBox{
+    margin-top: 80px;
+    overflow: hidden;
+}
+.careerBox .careerBox__benefit{
+    padding-right: 25px;
+    width: 50%;
+    float: left;
+}
+.careerBox .careerBox__benefit ul{
+	border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 30px 0;
+}
+.careerBox .careerBox__benefit li{
+    position: relative;
+    padding-left: 150px;
+    min-height: 70px;
+    text-align: left;
+}
+.careerBox .careerBox__benefit h4{
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.careerBox .careerBox__benefit span{
+    background-color: #f5732e;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    font-weight: 600;
+    color: #fff;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.careerBox .careerBox__benefit .careerBox__benefit__text{
+    word-break: keep-all;
+}
+.careerBox .careerBox__benefit p{
+    line-height: 20px;
+}
+
+.careerBox .careerBox__recruit{
+    width: 50%;
+    padding-left: 25px;
+    float: right;
+}
+.careerBox .careerBox__recruit li{
+    background-color: #f6f6f6;
+    border-radius: 20px;
+    margin-bottom: 22px;
+    position: relative;
+    height: 192px;
+}
+.careerBox .careerBox__recruit li::before{
+    content: "";
+    display: block;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+.careerBox .careerBox__recruit li:first-child::before{
+    background: url("../images/icon/wzd-recruit-01.png") no-repeat 50%/contain;
+}
+.careerBox .careerBox__recruit li:nth-child(2)::before{
+    background: url("../images/icon/wzd-recruit-02.png") no-repeat 50%/contain;
+}
+.careerBox .careerBox__recruit li:last-child::before{
+    background: url("../images/icon/wzd-recruit-03.png") no-repeat 50%/contain;
+}
+.careerBox .careerBox__recruit a{
+    padding: 0px 20px 0px 180px;
+    display: inline-block;
 }
