@@ -179,7 +179,7 @@
 /* service */
 #service{
     width: 100vw;
-    height: auto;
+    height: calc(100vh - 100px);
 }
 #service .service-container{
     width: 100%;
